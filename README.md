@@ -4,7 +4,12 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+There are some different type of flavors:
+
+# 1.Development
+# 2.Production
+# 3.Staging
+# 4.Testing
 
 A few resources to get you started if this is your first Flutter project:
 
