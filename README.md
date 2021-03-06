@@ -6,10 +6,10 @@ A new Flutter project.
 
 There are some different type of flavors:
 
-# 1.Development
-# 2.Production
-# 3.Staging
-# 4.Testing
+#### 1.Development
+#### 2.Production
+#### 3.Staging
+#### 4.Testing
 
 A few resources to get you started if this is your first Flutter project:
 
