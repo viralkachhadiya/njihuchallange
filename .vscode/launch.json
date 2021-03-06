@@ -39,5 +39,17 @@
                 "lib/app/flavors/main_production.dart"
             ]
         },
+        {
+            "name": "Run Testing",
+            "type": "dart",
+            "request": "launch",
+            "program": "lib/app/flavors/main_testing.dart",
+            "args": [
+                "--flavor",
+                "testing",
+                "-t",
+                "lib/app/flavors/main_testing.dart"
+            ]
+        },
     ]
 }

@@ -63,14 +63,16 @@ android {
             versionNameSuffix " Dev"
         }
         staging {
-            resValue "string", "app_name", "Njihu  Challenge Stg"
+            resValue "string", "app_name", "Njihu Challenge Stg"
             dimension "flavors"
             applicationIdSuffix ".staging"
             versionNameSuffix " Stg"
         }
         production {
-            resValue "string", "app_name", "Njihu Challenge"
+            resValue "string", "app_name", "Njihu Challenge Prod"
             dimension "flavors"
+            applicationIdSuffix ".production"
+            versionNameSuffix " Prod"
         }
     }
 
