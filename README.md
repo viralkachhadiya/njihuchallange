@@ -8,8 +8,9 @@ There are some different type of flavors:
 
 ### 1.Development
 
-
-![<img src="https://github.com/viralkachhadiya/njihuchallange/blob/master/screenshots/Screenshot_20210305_185039_com.example.njihuchallenge.jpg" width="400" height="800">](https://user-images.githubusercontent.com/58855915/110329791-15182480-8043-11eb-8131-c5826c8272f6.mp4)
+<video width="400" height="800" controls>
+  <source src="https://user-images.githubusercontent.com/58855915/110329791-15182480-8043-11eb-8131-c5826c8272f6.mp4" type="video/mp4">
+</video>
 
 ### 2.Production
 
