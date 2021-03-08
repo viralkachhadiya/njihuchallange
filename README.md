@@ -10,14 +10,15 @@ There are some different type of flavors:
 
 https://user-images.githubusercontent.com/58855915/110329791-15182480-8043-11eb-8131-c5826c8272f6.mp4
 
-![Screenshot_20210305_185022_com example njihuchallenge](https://user-images.githubusercontent.com/58855915/110329892-2e20d580-8043-11eb-8d00-46decfa3e7b3.jpg)
+<img src="https://github.com/viralkachhadiya/njihuchallange/blob/master/screenshots/Screenshot_20210305_185039_com.example.njihuchallenge.jpg" width="400" height="800">
 
 ### 2.Production
 
-![Screenshot_20210306_224536_com example njihuchallenge](https://user-images.githubusercontent.com/58855915/110330018-4abd0d80-8043-11eb-94cc-099986da7fe5.jpg)
+<img src="https://github.com/viralkachhadiya/njihuchallange/blob/master/screenshots/Screenshot_20210306_224314_com.example.njihuchallenge.jpg" width="400" height="800">
+
 ### 3.Staging
 
-![Screenshot_20210306_224141_com example njihuchallenge staging](https://user-images.githubusercontent.com/58855915/110330067-56a8cf80-8043-11eb-957e-a9aff8935d20.jpg)
+<img src="https://github.com/viralkachhadiya/njihuchallange/blob/master/screenshots/Screenshot_20210306_224141_com.example.njihuchallenge.staging.jpg" width="400" height="800">
 
 ### 4.Testing
 
