@@ -74,6 +74,12 @@ android {
             applicationIdSuffix ".production"
             versionNameSuffix " Prod"
         }
+        qatesting{
+            resValue "string", "app_name", "Njihu Challenge QaTesting"
+            dimension "flavors"
+            applicationIdSuffix ".qatesting"
+            versionNameSuffix " QaTesting"
+        }
     }
 
     applicationVariants.all { variant ->

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:njihuchallenge/app/app.dart';
-import 'package:njihuchallenge/app/state_container.dart';
+import 'package:njihuchallenge/app/globle_container_pvr.dart';
 import 'package:njihuchallenge/src/provider/explore_provider.dart';
 import 'package:njihuchallenge/src/provider/home_provider.dart';
 import 'package:provider/provider.dart';
@@ -10,7 +10,7 @@ enum Env {
   development,
   staging,
   production,
-  testing,
+  qatesting,
 }
 
 class AppConfig {
@@ -30,6 +30,9 @@ class AppConfig {
         statusBarColor: Colors.transparent,
         statusBarIconBrightness: Brightness.dark));
     runApp(MultiProvider(providers: [
+      ListenableProvider<GlobleContainerProvider>(
+          create: (_) => GlobleContainerProvider(
+              env: env, appName: appName, apiBaseUrl: apiBaseUrl)),
       ChangeNotifierProvider<HomeProvider>(
         create: (_) => HomeProvider(),
       ),
@@ -37,6 +40,6 @@ class AppConfig {
           create: (_) => ExploreProvider()
             ..getRandomUser()
             ..getBodyThumbnail())
-    ], child: StateContainer(child: App(this.env, this.appName))));
+    ], child: App(this.env, this.appName)));
   }
 }

@@ -40,13 +40,13 @@
             ]
         },
         {
-            "name": "Run Testing",
+            "name": "Run QaTesting",
             "type": "dart",
             "request": "launch",
             "program": "lib/app/flavors/main_testing.dart",
             "args": [
                 "--flavor",
-                "testing",
+                "qatesting",
                 "-t",
                 "lib/app/flavors/main_testing.dart"
             ]

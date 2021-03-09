@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:njihuchallenge/app/app_config.dart';
-import 'package:njihuchallenge/app/state_container.dart';
+import 'package:njihuchallenge/app/globle_container_pvr.dart';
 import 'package:njihuchallenge/constants/color.dart';
 import 'package:njihuchallenge/src/feature/connections/connections.dart';
 import 'package:njihuchallenge/src/feature/custom_bottom_nav_bar.dart';
@@ -14,7 +14,7 @@ import 'package:provider/provider.dart';
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    switch (StateContainer.of(context).globalState.env) {
+    switch (context.watch<GlobleContainerProvider>().env) {
       case Env.development:
         return Scaffold(
             body: Consumer<HomeProvider>(
@@ -40,7 +40,8 @@ class Home extends StatelessWidget {
                 text: "App is running on ",
                 style: TextStyle(color: appDarkGreen)),
             TextSpan(
-                text: StateContainer.of(context).globalState.appName.toString(),
+                text:
+                    context.watch<GlobleContainerProvider>().appName.toString(),
                 style:
                     TextStyle(fontWeight: FontWeight.bold, color: appDarkGreen))
           ]))),
@@ -55,13 +56,14 @@ class Home extends StatelessWidget {
                 text: "App is running on ",
                 style: TextStyle(color: appDarkGreen)),
             TextSpan(
-                text: StateContainer.of(context).globalState.appName.toString(),
+                text:
+                    context.watch<GlobleContainerProvider>().appName.toString(),
                 style:
                     TextStyle(fontWeight: FontWeight.bold, color: appDarkGreen))
           ]))),
         );
         break;
-      case Env.testing:
+      case Env.qatesting:
         return Scaffold(
           body: Center(
               child: RichText(
@@ -70,7 +72,8 @@ class Home extends StatelessWidget {
                 text: "App is running on ",
                 style: TextStyle(color: appDarkGreen)),
             TextSpan(
-                text: StateContainer.of(context).globalState.appName.toString(),
+                text:
+                    context.watch<GlobleContainerProvider>().appName.toString(),
                 style:
                     TextStyle(fontWeight: FontWeight.bold, color: appDarkGreen))
           ]))),
