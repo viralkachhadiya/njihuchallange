@@ -1,7 +1,11 @@
 #The name of the workflow
 name: Test,Build and Deploy
 #Trigger the workflow on push
-on: push
+on:
+  push:
+    tags:
+      - '*'
+      
 jobs: 
 
   build:
@@ -16,9 +20,17 @@ jobs:
         with:
           flutter-version: '2.0.1'
           channel: 'stable'
-      - run: flutter pub get
-      - run: flutter build apk --split-per-abi --flavor development -t lib/app/flavors/main_development.dart
-      - name: Release apk
+      
+      - name: Flutter clean
+        run: flutter clean    
+
+      - name: Pub Get Packages
+        run: flutter pub get
+
+      - name: Build Release apk
+        run: flutter build apk --split-per-abi --flavor development -t lib/app/flavors/main_development.dart
+
+      - name: Github Release apk
         uses: ncipollo/release-action@v1
         with:
           artifacts: "build/app/outputs/flutter-apk/*.apk"
